@@ -3,7 +3,22 @@
 <head>
 	<title>firebase</title>
 	<meta charset="utf-8">
-	<script src="https://www.gstatic.com/firebasejs/5.0.0/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-database.js"></script>
+
+	<script type="text/javascript">
+		// initialize firebase
+		var config = {
+			apiKey: "AIzaSyDxJ7VUZ_KuAqBmh_k46MOwfFRil_E6OlM",
+			authDomain: "front-end-51c85.firebaseapp.com",
+			databaseURL: "https://front-end-51c85.firebaseio.com",
+			projectId: "front-end-51c85",
+			storageBucket: "front-end-51c85.appspot.com",
+			messagingSenderId: "566402615229"
+		};
+		firebase.initializeApp(config);
+	</script>
 </head>
 <body>
     
@@ -18,6 +33,7 @@
  	    <button id="log-out">Log Out</button>
 	</div>
 	
-	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="js/auth.js"></script>
+	<script type="text/javascript" src="js/data.js"></script>
 </body>
 </html>
