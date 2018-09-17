@@ -19,19 +19,60 @@
 		};
 		firebase.initializeApp(config);
 	</script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     
-	<pre id="object"></pre>
-	<ul id="list"></ul>
-	
-	<div id="auth">
-	    <input type="email" id="email" placeholder="Email">
-	    <input type="password" id="password" placeholder="Password">
-	    <button id="sign-up">Sign Up</button>
- 	    <button id="log-in">Log In</button>
- 	    <button id="log-out">Log Out</button>
+	<div id="container">
+		
+		<div id="title">
+			<h1>MMP 350 Site</h1>
+		</div>
+		
+		<div id="auth">
+			<input type="email" id="email" placeholder="Email">
+			<input type="password" id="password" placeholder="Password">
+			<button id="sign-up">Sign Up</button>
+		 	<button id="log-in">Log In</button>
+		 	<button id="log-out">Log Out</button>
+		</div>
+
+		<div id="write-post">
+			<textarea id="post-body" placeholder="What's on your mind?"></textarea>
+			<br>
+			<button id="submit-post">Publish</button>
+		</div>
+
+		<div id="posts">
+			<div class="post">
+				<div class="post-text">Hello world!</div>
+				<div class="post-info">
+					by <span class="post-author">Owen</span>
+					on <span class="post-date">on Sept 17</span>
+				</div>
+			</div>
+			<div class="post">
+				<div class="post-text">Hello world!</div>
+				<div class="post-info">
+					by <span class="post-author">Owen</span>
+					on <span class="post-date">on Sept 17</span>
+				</div>
+			</div>
+		</div>
+
+		<ul id="menu">
+			<li>Profile</li>
+			<li>Friends</li>
+			<li>All Users</li>
+		</ul>
+
+		<div id="thing">
+			Why do websites even have footers?
+		</div>
+
 	</div>
+	
+	
 	
 	<script type="text/javascript" src="js/auth.js"></script>
 	<script type="text/javascript" src="js/data.js"></script>

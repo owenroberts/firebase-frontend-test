@@ -1,0 +1,35 @@
+#container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 120px max-content max-content;
+	grid-template-areas:
+		"header header header"
+		"main main sidebar"
+		"footer footer footer";
+}
+
+#title {
+	grid-area: header;
+}
+
+#auth {
+	grid-area: header;
+	grid-column: 3 / span 1;
+}
+
+#write-post {
+	grid-area: sidebar;
+}
+
+#posts {
+	grid-area: main;
+}
+
+#menu {
+	grid-area: footer;
+}
+
+#thing {
+	grid-area: footer;
+	grid-column: 3 / span 1;
+}
